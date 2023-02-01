@@ -57,12 +57,14 @@ nav{
     grid-template-columns: 1fr 1fr 1fr;
     height: 100px;
     grid-column-gap: 50px;
-    border-bottom: solid black 1.5px;
 }
 
 .item{
     /* display: inline-block; */
     align-self: center;
+}
+.allnews{
+    border-bottom: solid black 1.5px;
 }
 
 .allnewstext{
@@ -84,4 +86,41 @@ nav{
 
 /* all news completed */
 
+.article{
+    display: grid;
+    grid-template-columns: 180px auto;
+    grid-column-gap: 50px;
+    border-bottom: solid black 1.5px;
+    padding: 10px 0 40px 0;
+}
 
+.articleImg img{
+    max-width: 180px;
+    max-height: 180px;
+    height: 200px;
+    width: 200px;
+}
+
+.articleImg{
+    width: fit-content;
+    align-self: end;
+}
+
+.btn button{
+    background-color: #FF4513;
+    padding: 10px 10px;
+    color: white;
+    font-size: 13px;
+}
+
+.title h2{
+    margin: 10px 0;
+}
+
+.uploadDate p{
+    margin: 10px 0;
+}
+
+.articleContent p{
+    margin: 10px 0;
+}
