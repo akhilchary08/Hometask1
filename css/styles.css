@@ -110,4 +110,12 @@ nav{
         grid-template-columns: auto;
         grid-template-rows: 180px auto;
     }
+    .subscribe{
+        grid-column-start: 1;
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+    .allnews{
+        height: fit-content;
+    }
 }
