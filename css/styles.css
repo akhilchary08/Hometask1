@@ -1,6 +1,6 @@
 body{
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -59,7 +59,24 @@ nav{
     display: block;
     width: 100px;
 }
+.subscribe{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 4fr;
+}
 
+.subscribe button{
+    width: 100px;
+    grid-column-start: 2;
+    background-color: #000;
+    color: #FFF;
+}
+
+.subscribe-input{
+    display: inline;
+    width: 125px;
+    grid-column-start: 1;
+}
 .subscribe p{
     margin: 0;
 }
@@ -70,7 +87,7 @@ nav{
     display: grid;
     grid-template-columns: 180px auto;
     grid-column-gap: 50px;
-    border-bottom: solid black 1.5px;
+    border-bottom: solid #CCC 1.5px;
     padding: 10px 0 40px 0;
 }
 
@@ -90,11 +107,12 @@ nav{
     background-color: #FF4513;
     padding: 10px 10px;
     color: white;
-    font-size: 13px;
+    font-size: 11px;
 }
 
 .title h2{
     margin: 10px 0;
+    line-height: 0.5;
 }
 
 .uploadDate p{
@@ -103,6 +121,8 @@ nav{
 
 .articleContent p{
     margin: 10px 0;
+    line-height: 1.2;
+    font-size: 15px;
 }
 
 @media only screen and (max-width:800px) {
@@ -114,6 +134,13 @@ nav{
         grid-column-start: 1;
         margin-left: 20px;
         margin-bottom: 20px;
+    }
+    .subscribe input{
+        margin-right: 10px;
+        grid-column-start: 1;
+    }
+    .subscribe button{
+        grid-column-start: 3;
     }
     .allnews{
         height: fit-content;
