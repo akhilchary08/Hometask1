@@ -5,14 +5,101 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet"> -->
     <title>Document</title>
 </head>
 <body>
     <nav>
-        <div>
-            <h2>NEWS BLOG</h2>
+        <div class="navbox">
+            <h1>NEWS BLOG</h1>
             <h6>WORLDWIDE NEWS</h6>
         </div>
     </nav>
+
+    <div class="allnews container">
+        <div class="category item">
+            <span>SELECT CATEGORY</span>
+            <select name="category" id="category">
+                <option value="none" selected disabled hidden>All</option>
+                <option value="title1">title1</option>
+                <option value="title2">title2</option>
+            </select>
+        </div>
+        <div class="allnewstext item">
+            <h1>ALL NEWS</h1>
+        </div>
+        <div class="subscribe item">
+            <p>SUBSCRIBE</p>
+            <input type="email" name="subscribe" class="subscribe-input" placeholder="email address" id="email">
+            <button class="subscribe-input">Subscribe</button>
+        </div>
+    </div>
+    <div class="article">
+        <div class="articleImg">
+            <img src="https://ancdn.fancaps.net/11806410.jpg" alt="">
+        </div>
+        <div class="content">
+            <div class="title">
+                <h2>Title One</h2>
+            </div>
+            <div class="uploadDate">
+                <p>posted on 29 june,2019 //Category Category One</p>
+            </div>
+            <div class="articleContent">
+                <p>Lorem ipsum dolor sit amet,consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magne aliqua .Quis ipsum suspendisse ultrices
+                    gravida. Risus Commodo viverra maecenas accumsan lacus vel facilisis. consectetur adipiscing elit, sed do eiusmod tempor incident ut labore et dolore magna
+                    aliquauis ipsum suspendisse ultrices gravidasus commodo.</p>
+            </div>
+            <div class="btn">
+                <button>Continue Reading</button>
+            </div>
+        </div>
+    </div>
+    <div class="article">
+        <div class="articleImg">
+            <img src="https://flxt.tmsimg.com/assets/p225665_b_v9_ab.jpg" alt="">
+        </div>
+        <div class="content">
+            <div class="title">
+                <h2>Title Two</h2>
+            </div>
+            <div class="uploadDate">
+                <p>posted on 29 june,2019 //Category Category Two</p>
+            </div>
+            <div class="articleContent">
+                <p>Lorem ipsum dolor sit amet,consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magne aliqua .Quis ipsum suspendisse ultrices
+                    gravida. Risus Commodo viverra maecenas accumsan lacus vel facilisis. consectetur adipiscing elit, sed do eiusmod tempor incident ut labore et dolore magna
+                    aliquauis ipsum suspendisse ultrices gravidasus commodo.</p>
+            </div>
+            <div class="btn">
+                <button>Continue Reading</button>
+            </div>
+        </div>
+    </div>
+    <div class="article">
+        <div class="articleImg">
+            <img src="https://www.crunchyroll.com/imgsrv/display/thumbnail/480x720/catalog/crunchyroll/a9d4c1493f80703fe86dd83fb3b37623.jpe" alt="">
+        </div>
+        <div class="content">
+            <div class="title">
+                <h2>Title Three</h2>
+            </div>
+            <div class="uploadDate">
+                <p>posted on 29 june,2019 //Category Category Three</p>
+            </div>
+            <div class="articleContent">
+                <p>Lorem ipsum dolor sit amet,consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magne aliqua .Quis ipsum suspendisse ultrices
+                    gravida. Risus Commodo viverra maecenas accumsan lacus vel facilisis. consectetur adipiscing elit, sed do eiusmod tempor incident ut labore et dolore magna
+                    aliquauis ipsum suspendisse ultrices gravidasus commodo.</p>
+            </div>
+            <div class="btn">
+                <button>Continue Reading</button>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>

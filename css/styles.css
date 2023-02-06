@@ -1,0 +1,155 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+nav{
+    background-color: #062146;
+    height: 90px;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 320px;
+}
+
+.navbox{
+    height: 45px;
+    display: grid;
+    align-self: center;
+    justify-content: center;
+    background-color: white;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #FF2133;
+}
+
+.navbox h1, .navbox h6{
+    margin: 0;
+    justify-self: center;
+}
+
+/* nav bar is completed */
+
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 100px;
+    grid-column-gap: 50px;
+}
+
+.item{
+    /* display: inline-block; */
+    align-self: center;
+}
+.allnews{
+    border-bottom: solid black 1.2px;
+    width: 99.5%;
+}
+
+.allnewstext{
+    justify-self: center;
+}
+
+.category{
+    margin-left: 20px;
+}
+
+.category select{
+    display: block;
+    width: 100px;
+    width: 100px;
+    background-color: #FFF;
+}
+.subscribe{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 4fr;
+}
+
+.subscribe button{
+    width: 100px;
+    grid-column-start: 2;
+    background-color: #000;
+    color: #FFF;
+}
+
+.subscribe-input{
+    display: inline;
+    width: 125px;
+    grid-column-start: 1;
+}
+.subscribe p{
+    margin: 0;
+}
+
+/* all news completed */
+
+.article{
+    display: grid;
+    grid-template-columns: 180px auto;
+    grid-column-gap: 70px;
+    border-bottom: solid #CCC 1.5px;
+    padding: 10px 0 40px 0;
+    margin-top: 20px;
+    width: 99.5%;
+}
+
+.articleImg img{
+    max-width: 180px;
+    max-height: 180px;
+    height: 200px;
+    width: 200px;
+}
+
+.articleImg{
+    width: fit-content;
+    align-self: end;
+    margin-left: 20px;
+}
+
+.btn button{
+    background-color: #FF4513;
+    padding: 10px 10px;
+    color: white;
+    font-size: 11px;
+}
+
+.title h2{
+    margin: 10px 0;
+    line-height: 0.5;
+    color: #00173E;
+}
+
+.uploadDate p{
+    margin: 10px 0;
+}
+
+.articleContent p{
+    margin: 10px 0;
+    line-height: 1.3;
+    font-size: 15px;
+}
+
+@media only screen and (max-width:800px) {
+    .article{
+        grid-template-columns: auto;
+        grid-template-rows: 180px auto;
+    }
+    .subscribe{
+        grid-column-start: 1;
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+    .subscribe input{
+        margin-right: 10px;
+        grid-column-start: 1;
+    }
+    .subscribe button{
+        grid-column-start: 3;
+    }
+    .allnews{
+        height: fit-content;
+    }
+}
